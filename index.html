@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/Style.css">
+<style>
+    /* CSS Reset */
+    body{
+        color:rgb(127, 161, 157);
+        margin: 0px;
+        padding: 0px;
+        background: url(img/bg2.jpg);
+        /* background-size: cover; */
+        /* background-position: center; */x`
+        font-family: 'Baloo Chettan 2', cursive;
+    }
+    .left{
+    
+        display: inline-block;
+        position: absolute;
+        left: 40px;
+        top: 0px;
+    }
+    .left img{
+        width: 100px;
+        /* filter: invert(100%); */
+        height: 80px;
+
+    }
+    .left div{
+        /* display: inline; */
+        text-align: center;
+        line-height: 0px;
+        font-size: 17px;
+        padding-bottom: 9px;
+    }
+    .center{
+        
+        display: block;
+        margin: 20px auto;
+        width: 50%;
+    }
+    .right{
+        
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: white;
+        padding: 25px 25px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        color: white;
+        background-color: black;
+        border: 2px solid grey;
+        cursor: pointer;
+        padding: 5px 15px;
+        margin: 0px 9px;
+        border-radius: 4px;
+        font-family: 'Baloo Chettan 2', cursive; 
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 74px 76px;
+        padding: 56px 79px;
+        border-radius: 20px;
+        width: 37%;
+    }
+    .form-item input{
+        display: block;
+        width: 380px;
+        margin: 9px auto;
+        padding: 1px;
+        border: 2px solid black;
+        font-size: 19px;
+        border-radius: 5px;
+        font-family: 'Baloo Chettan 2', cursive;
+        text-align: center;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 380px;
+        font-size: 18px;
+        margin: 12px auto;
+}
+    }
+</style>
+<body>
+    <header class="header"> 
+        <!-- for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>
+                Fitness Center 
+            </div>            
+        </div>
+        <!-- navigation bar -->
+        <div class="center"> 
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>        
+        </div>
+        <!-- login/signup button -->
+        <div class="right">
+           <button class="btn">Login</button>
+           <button class="btn">Sign Up</button>
+        </div>
+    </header>
+    <div class="container">
+       <h1>Join The Best Gym of Delhi</h1>    
+       <form action="noAction.php">
+           <div class="form-item">
+               <input type="text" name="" placeholder="enter your name">
+           </div>
+           <div class="form-item">
+               <input type="text" name="" placeholder="enter your age">
+           </div>
+           <div class="form-item">
+               <input type="text" name="" placeholder="enter your gender">
+           </div>
+           <div class="form-item">
+               <input type="text" name="" placeholder="enter your locality">
+           </div>
+           <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
